@@ -443,7 +443,7 @@ import CoreGraphics
             textLayer.font = CTFontCreateWithName(textLayerFont.fontName as CFString, textLayerFont.pointSize, nil)
             textLayer.fontSize = textLayerFont.pointSize
             
-            if i == currentIndex || i == completedTillIndex {
+            if i == currentIndex || i <= completedTillIndex {
                 textLayer.foregroundColor = centerLayerDarkBackgroundTextColor.cgColor
             } else {
                 textLayer.foregroundColor = centerLayerTextColor?.cgColor
