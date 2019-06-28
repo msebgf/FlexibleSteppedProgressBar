@@ -45,7 +45,7 @@ import CoreGraphics
             }
         }
         didSet {
-//            animationRendering = true
+            animationRendering = true
             self.setNeedsDisplay()
         }
     }
